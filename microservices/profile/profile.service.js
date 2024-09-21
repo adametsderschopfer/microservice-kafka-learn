@@ -7,7 +7,7 @@ const fastify = Fastify({
 
 fastify.get('/profile/:id', handleProfileGet)
 
-fastify.listen({ port: 3000 }, (err, address) => {
+fastify.listen({ port: 3001, host: "0.0.0.0" }, (err, address) => {
     if (err) throw err
     console.log("Profile service: Start Up!")
 })

@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  user_microservice:
+    build: "./microservices/user"
+    ports:
+      - "3000:3000"
+  profile_microservice:
+    build: "./microservices/profile"
+    ports:
+      - "3001:3001"

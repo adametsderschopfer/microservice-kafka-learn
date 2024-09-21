@@ -8,4 +8,8 @@ export const handleUserRegister = (request, reply) => {
     * */
 
     // todo: send
+
+    reply.send({
+        message: "User successfully created!"
+    })
 }

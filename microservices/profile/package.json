@@ -1,0 +1,10 @@
+{
+  "name": "microservice-kafka-learn_profile",
+  "version": "1.0.0",
+  "author": "Vladislav Adamets <adametsderschopfer@yandex.ru>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "fastify": "^5.0.0"
+  }
+}
