@@ -31,6 +31,7 @@ fastify.post('/user/register', async (request, reply) => {
             email: "user@example.com",
             username: "imbatman"
         }),
+        key: 'user_register_key'
     })
 
     reply.send({

@@ -1,0 +1,1 @@
+export const KAFKA_USER_REGISTER_TOPIC = "user_register"
