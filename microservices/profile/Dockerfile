@@ -3,8 +3,9 @@ FROM node:22
 WORKDIR /profile-microservice
 
 COPY package.json .
+COPY yarn.lock .
 
-RUN npm install
+RUN yarn install
 
 COPY . .
 

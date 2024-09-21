@@ -10,7 +10,7 @@ services:
 
   kafka_broker:
     image: confluentinc/cp-kafka:latest
-    container_name: kafka_broker
+    container_name: kafka
     depends_on:
       - zookeeper
     ports:
@@ -24,6 +24,8 @@ services:
 
   user_microservice:
     build: "./microservices/user"
+    volumes:
+      - ./microservices/user:/user_microservices
     ports:
       - "3000:3000"
     depends_on:
@@ -31,6 +33,8 @@ services:
 
   profile_microservice:
     build: "./microservices/profile"
+    volumes:
+      - ./microservices/profile:/profile_microservices
     ports:
       - "3001:3001"
     depends_on:
