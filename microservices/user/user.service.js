@@ -1,4 +1,6 @@
 import Fastify from 'fastify'
+import kafka from "@fastify/kafka"
+
 import {handleUserRegister} from "./handlers/register.js";
 
 const fastify = Fastify({

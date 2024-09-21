@@ -5,6 +5,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "@fastify/kafka": "^3.0.0",
     "fastify": "^5.0.0"
   }
 }
